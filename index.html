@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/homepage/style.css">
+</head>
+<body>
+    <div id="adaptive">
+
+        <nav class="navbar">
+            <div class="navbar__wrapper">
+
+                <a href="#adaptive" class="navbar__logo">
+                    <img src="images/logo.svg" alt="logo" class="navbar__logo_icon">
+                </a>
+
+                <div class="navbar__menu">
+                    <button type="button" class="navbar__menu_btn" onclick="toggleMenu(this)">
+                        <img src="images/mobileMenu.png" alt="" class="navbar__menu_btn_icon active">
+                        <img src="images/closeMobileMenu.png" alt="" class="navbar__menu_btn_icon">
+                    </button>
+                    <ul class="navbar__menu_list">
+                        <li class="navbar__menu_list_el">
+                            <a href="" class="navbar__menu_list_link">
+                                <span class="navbar__menu_list_link_txt">Платформа</span>
+                                <img src="images/navArr.svg" alt="arrow" class="navbar__menu_list_link_arr">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="" class="sumbenu__link">Какая-то ссылка</a></li>
+                                <li><a href="" class="sumbenu__link">Какая-то ссылка</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__menu_list_el">
+                            <a href="" class="navbar__menu_list_link">
+                                <span class="navbar__menu_list_link_txt">Демо-версия</span>
+                                <img src="images/navArr.svg" alt="arrow" class="navbar__menu_list_link_arr">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="" class="sumbenu__link">Какая-то ссылка</a></li>
+                                <li><a href="" class="sumbenu__link">Какая-то ссылка</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__menu_list_el">
+                            <a href="" class="navbar__menu_list_link">
+                                <span class="navbar__menu_list_link_txt">Академия</span>
+                                <img src="images/navArr.svg" alt="arrow" class="navbar__menu_list_link_arr">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="" class="sumbenu__link">Какая-то ссылка</a></li>
+                                <li><a href="" class="sumbenu__link">Какая-то ссылка</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__menu_list_el">
+                            <a href="" class="navbar__menu_list_link">
+                                <span class="navbar__menu_list_link_txt">Партнерская программа</span>
+                                <img src="images/navArr.svg" alt="arrow" class="navbar__menu_list_link_arr">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="" class="sumbenu__link">Какая-то ссылка</a></li>
+                                <li><a href="" class="sumbenu__link">Какая-то ссылка</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__menu_list_el">
+                            <a href="" class="navbar__menu_list_link">
+                                <span class="navbar__menu_list_link_txt">О нас</span>
+                                <img src="images/navArr.svg" alt="arrow" class="navbar__menu_list_link_arr">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="" class="sumbenu__link">Какая-то ссылка</a></li>
+                                <li><a href="" class="sumbenu__link">Какая-то ссылка</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar__account">
+                    <button type="button" class="navbar__account_btn" onclick="toggleMenu(this)">
+                        <img src="images/account.svg" alt="" class="navbar__account_btn_icon">
+                    </button>
+                    <div class="navbar__account_wrapper">
+                        <button type="button" class="navbar__account_wrapper_btn">Регистрация</button>
+                        <button type="button" class="navbar__account_wrapper_btn">Вход</button>
+                    </div>
+                </div>
+                
+                <div class="navbar__lang">
+                    <button type="button" class="navbar__lang_btn">
+                        <img src="images/flag1.png" alt="country flag" class="navbar__lang_btn_flag">
+                        <span class="navbar__lang_btn_txt">RU</span>
+                    </button>
+                    <div class="navbar__lang_wrapper">
+                        <button type="button" class="navbar__lang_wrapper_btn">
+                            <img src="images/flag1.png" alt="country flag" class="navbar__lang_wrapper_flag">
+                            <span class="navbar__lang_wrapper_txt">US</span>
+                        </button>
+                        <button type="button" class="navbar__lang_wrapper_btn">
+                            <img src="images/flag1.png" alt="country flag" class="navbar__lang_wrapper_flag">
+                            <span class="navbar__lang_wrapper_txt">AM</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__desc">
+                    <img src="images/robotHeader.png" alt="" class="header__desc_decor">
+                    <h2 class="header__desc_subtitle">Роботы, не требующие внимания человека</h2>
+                    <h1 class="header__desc_title">Умная торговля <br> на крипто <br> рынках</h1>
+                    <p class="header__desc_pr">Получи 10$ за подключение</p>
+                    <button type="button" class="header__desc_btn">Подключиться</button>
+                </div>
+                <div class="header__pic">
+                    <img src="images/headerPic.png" alt="" class="header__pic_img">
+                </div>
+            </div>
+        </header>
+
+        <section class="partner">
+            <div class="partner__wrapper">
+                <h2 class="partner__title">МЫ ЯВЛЯЕМСЯ ТОРГОВЫМИ ПАРТНЕРАМИ БИРЖ</h2>
+                <div class="partner__exchanges">
+                    <img src="images/binance.png" alt="" class="partner__exchanges_icon">
+                    <img src="images/bybit.png" alt="" class="partner__exchanges_icon">
+                    <img src="images/bitget.png" alt="" class="partner__exchanges_icon">
+                </div>
+                <div class="partner__triggers">
+                    <div class="partner__triggers_el">
+                        <h3 class="partner__triggers_el_title blue">1000+</h3>
+                        <p class="partner__triggers_el_pr">Пользователей на платформе</p>
+                    </div>
+                    <div class="partner__triggers_el">
+                        <h3 class="partner__triggers_el_title purple">$ 500К</h3>
+                        <p class="partner__triggers_el_pr">Объем средств под управлением роботами</p>
+                    </div>
+                    <div class="partner__triggers_el">
+                        <h3 class="partner__triggers_el_title fiol">$ 30К</h3>
+                        <p class="partner__triggers_el_pr">Профит пользователей за месяц</p>
+                    </div>
+                    <div class="partner__triggers_el">
+                        <h3 class="partner__triggers_el_title darkblue">900</h3>
+                        <p class="partner__triggers_el_pr">Количество сделок за месяц</p>
+                    </div>
+                </div>
+                <div class="partner__arguments">
+                    <h2 class="partner__arguments_title">Три аргумента системы Robo Traders</h2>
+                    <div class="partner__arguments_wrapper">
+                        <div class="partner__arguments_decors">
+                            <img src="images/left.svg" alt="" class="partner__arguments_decor left">
+                            <img src="images/center.svg" alt="" class="partner__arguments_decor center">
+                            <img src="images/right.svg" alt="" class="partner__arguments_decor right">
+                        </div>
+                        <div class="partner__arguments_container">
+                            <div class="partner__arguments_el">
+                                <img src="images/argument1.png" alt="" class="partner__arguments_el_icon">
+                                <h3 class="partner__arguments_el_title">ПростоТа</h3>
+                                <p class="partner__arguments_el_pr">Не нужно обладать специальными навыками, робот не требует настроек и подключается за 10 минут</p>
+                            </div>
+                            <div class="partner__arguments_el">
+                                <img src="images/argument2.png" alt="" class="partner__arguments_el_icon">
+                                <h3 class="partner__arguments_el_title">БЕЗОПАСНОсть</h3>
+                                <p class="partner__arguments_el_pr">Мы не имеем доступа к вашим средствам. Вы полностью контролируете свой депозит</p>
+                            </div>
+                            <div class="partner__arguments_el">
+                                <img src="images/argument3.png" alt="" class="partner__arguments_el_icon">
+                                <h3 class="partner__arguments_el_title">Результат</h3>
+                                <p class="partner__arguments_el_pr">Все сделки закрываются только в плюс по тейк-профит</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutRobots">
+            <div class="aboutRobots__wrapper">
+                <h2 class="aboutRobots__title">Позвольте роботам зарабатывать для вас, пока вы заняты своими делами</h2>
+                <h3 class="aboutRobots__subtitle">Им не нужно спать, есть или уезжать в отпуск. Они торгуют на крипторынках 24/7</h3>
+                <div class="aboutRobots__container">
+                    <div class="aboutRobots__el">
+                        <div class="aboutRobots__el_wrapper">
+                            <img src="images/about1.png" alt="" class="aboutRobots__el_icon">
+                            <h4 class="aboutRobots__el_title">Роботы умны и эффективны. Их не нужно настраивать</h4>
+                            <p class="aboutRobots__el_pr">Не требуют знаний об индексах, биржевых позициях, котировках и прочих непонятных словах.</p>
+                            <a href="" class="aboutRobots__el_link">Выбрать робота</a>
+                        </div>
+                    </div>
+                    <div class="aboutRobots__el">
+                        <div class="aboutRobots__el_wrapper">
+                            <img src="images/about2.png" alt="" class="aboutRobots__el_icon">
+                            <h4 class="aboutRobots__el_title">Подключай успешные стратегии в два клика</h4>
+                            <p class="aboutRobots__el_pr">Используй копитрейдинг, если не хочешь вникать в анализ рынка и следить за новостями.</p>
+                            <a href="" class="aboutRobots__el_link">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="aboutRobots__el">
+                        <div class="aboutRobots__el_wrapper">
+                            <img src="images/about3.png" alt="" class="aboutRobots__el_icon">
+                            <h4 class="aboutRobots__el_title">Торговый терминал Robo Traders понятен даже новичку</h4>
+                            <p class="aboutRobots__el_pr">Интерактивный, интуитивно понятный и современный. Внебиржевые сигналы и индикаторы подскажут важное. </p>
+                            <a href="" class="aboutRobots__el_link">Подключить</a>
+                        </div>
+                    </div>
+                    <div class="aboutRobots__el">
+                        <div class="aboutRobots__el_wrapper">
+                            <img src="images/about4.png" alt="" class="aboutRobots__el_icon">
+                            <h4 class="aboutRobots__el_title">Роботы в Robo Traders используют нейросети и ИИ</h4>
+                            <p class="aboutRobots__el_pr">Они 24/7 мониторят и анализируют базы данных, которые затем используют в разных торговых стратегиях для получения отличной доходности. </p>
+                            <a href="" class="aboutRobots__el_link">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="aboutRobots__el">
+                        <div class="aboutRobots__el_wrapper">
+                            <img src="images/about5.png" alt="" class="aboutRobots__el_icon">
+                            <h4 class="aboutRobots__el_title">Управление рисками </h4>
+                            <p class="aboutRobots__el_pr">Пользователи могут составлять портфель из алгоритмов на своё усмотрение, от консервативных спотовых до высокорискованных фьючерсных.</p>
+                            <a href="" class="aboutRobots__el_link">Риск-менеджмент</a>
+                        </div>
+                    </div>
+
+                    <div class="aboutRobots__more">
+                        <img src="images/smallRobot.png" alt="" class="aboutRobots__more_icon">
+                        <h3 class="aboutRobots__more_title">Посмотри <br> Robo Traders <br> в деле</h3>
+                        <p class="aboutRobots__more_pr">Воспользуйтесь демо-версией кабинета и оцените, как наши алгоритмы работают на рынке в режиме реального времени!</p>
+                        <a href="" class="aboutRobots__more_link"><span class="aboutRobots__more_link_txt">Попробовать</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="howItWork">
+            <div class="howItWork__wrapper">
+                <h3 class="howItWork__subtitle">Как это работает?</h3>
+                <h2 class="howItWork__title"><strong class="gradient">Robo Traders</strong> – сервис для торговли на криптобиржах с помощью умных роботов</h2>
+                <div class="howItWork__container">
+                    <div class="howItWork__el">
+                        <div class="howItWork__el_pic">
+                            <img src="images/howItWork1.png" alt="" class="howItWork__el_pic_icon">
+                        </div>
+                        <h3 class="howItWork__el_title">Выбери криптобиржу и заведи на ней аккаунт</h3>
+                        <p class="howItWork__el_pr">Robo Traders - торговый партнер крупнейших криптобирж</p>
+                        <div class="howItWork__el_logos">
+                            <img src="images/exchanges.png" alt="" class="howItWork__el_logos_img">
+                        </div>
+                    </div>
+                    <div class="howItWork__el">
+                        <div class="howItWork__el_pic">
+                            <img src="images/howItWork2.png" alt="" class="howItWork__el_pic_icon">
+                        </div>
+                        <h3 class="howItWork__el_title">Подключи <strong class="gradient">Robo Traders</strong> к аккаунту на криптобирже</h3>
+                        <p class="howItWork__el_pr">Это просто и безопасно. Мы не храним у себя ваши средства</p>
+                        <a href="" class="howItWork__el_link blue">Подключить</a>
+                    </div>
+                    <div class="howItWork__el">
+                        <div class="howItWork__el_pic">
+                            <img src="images/howItWork3.png" alt="" class="howItWork__el_pic_icon">
+                        </div>
+                        <h3 class="howItWork__el_title">Начни получать прибыль</h3>
+                        <p class="howItWork__el_pr">Роботы возьмут на себя всю работу на бирже</p>
+                        <a href="" class="howItWork__el_link purple">Подключить</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="info__wrapper">
+                <h2 class="info__title">Вы платите комиссию только тогда, когда получили доход от сделки</h2>
+                <div class="info__container">
+                    <div class="info__el">
+                        <div class="info__el_wrapper">
+                            <h3 class="info__el_title">Сервис взымает 20%  от вашего дохода только после закрытия сделки и получения прибыли на ваш счет</h3>
+                        </div>
+                    </div>
+                    <div class="info__el">
+                        <div class="info__el_wrapper">
+                            <h3 class="info__el_title">Платформа не берет  никаких оплат, пока вы не получили прибыль. WIN-WIN!</h3>
+                        </div>
+                    </div>
+                    <div class="info__el">
+                        <div class="info__el_wrapper">
+                            <h3 class="info__el_title">Комиссия с прибыли списывается с внутреннего баланса платформы, который вы пополняете самостоятельно</h3>
+                        </div>
+                    </div>
+                    <div class="info__discount">
+                        <h3 class="info__discount_title">20%</h3>
+                        <img src="images/cubes.png" alt="" class="info__discount_img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tarif">
+            <div class="tarif__wrapper">
+                <h2 class="tarif__title">Честные цены за впечатляющие результаты</h2>
+                <div class="tarif__container">
+                    <div class="tarif__el">
+                        <h4 class="tarif__el_subtitle">Подходит начинающим</h4>
+                        <h3 class="tarif__el_title">Пакет «Basis»</h3>
+                        <strong class="tarif__el_strong">Только спотовый рынок</strong>
+                        <p class="tarif__el_price"><b class="bold">30 $ </b>разовый платеж</p>
+                        <p class="tarif__el_discount"><b class="bold">Акция – бесплатно</b> в этом календарном месяце</p>
+                        <p class="tarif__el_pr"><b class="bold big">3</b> торговых робота для спотового рынка</p>
+                        <p class="tarif__el_pr"><b class="bold big">1-5%</b> доходность пакета в месяц </p>
+                        <p class="tarif__el_pr dot"><b class="bold">Неограниченное действие пакета после оплаты</b></p>
+                        <p class="tarif__el_pr dot"><b class="bold">Полный контроль своего депозита</b></p>
+                        <p class="tarif__el_pr"><b class="bold">Дополнительный доход от партнерской программы</b></p>
+                        <a href="" class="tarif__el_link">Подключить</a>
+                    </div>
+                    <div class="tarif__el">
+                        <h4 class="tarif__el_subtitle">Подходит всем трейдерам</h4>
+                        <h3 class="tarif__el_title">Пакет «Trader»</h3>
+                        <strong class="tarif__el_strong">Торговля и копитрейдинг</strong>
+                        <p class="tarif__el_price"><b class="bold">50 $ </b>разовый платеж</p>
+                        <p class="tarif__el_discount"><b class="bold">Акция – бесплатно</b> в этом календарном месяце</p>
+                        <p class="tarif__el_pr">Торговый терминал или портфель стратегий трейдеров</p>
+                        <p class="tarif__el_pr"><b class="bold big">2-30%</b> доходность пакета в месяц </p>
+                        <p class="tarif__el_pr dot"><b class="bold">Неограниченное действие пакета после оплаты</b></p>
+                        <p class="tarif__el_pr dot"><b class="bold">Полный контроль своего депозита</b></p>
+                        <p class="tarif__el_pr"><b class="bold">Дополнительный доход от партнерской программы</b></p>
+                        <a href="" class="tarif__el_link">Подключить</a>
+                    </div>
+                    <div class="tarif__el">
+                        <h4 class="tarif__el_subtitle blue">Для финансово активных</h4>
+                        <h3 class="tarif__el_title">Пакет «Business»</h3>
+                        <strong class="tarif__el_strong gradient">Все рынки в одном месте</strong>
+                        <p class="tarif__el_price"><b class="bold">100 $ </b>разовый платеж</p>
+                        <p class="tarif__el_discount"><b class="bold blue">Акция – бесплатно</b> в этом календарном месяце</p>
+                        <p class="tarif__el_pr"><b class="bold big">3</b> торговых робота для <br> всех рынков</p>
+                        <p class="tarif__el_pr"><b class="bold big">3-50%</b> доходность пакета в месяц </p>
+                        <p class="tarif__el_pr dot dot-blue blue"><b class="bold">Неограниченное действие пакета после оплаты</b></p>
+                        <p class="tarif__el_pr dot dot-blue purple"><b class="bold">Полный контроль своего депозита</b></p>
+                        <p class="tarif__el_pr darkblue"><b class="bold">Дополнительный доход от партнерской программы</b></p>
+                        <a href="" class="tarif__el_link">Подключить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tarif__referal">
+                <h2 class="tarif__referal_title">Приглашай партнеров и получай 25% больше прибыли: увеличь свой доход с партнерской программой</h2>
+                <div class="tarif__referal_pic">
+                    <img src="images/referal.png" alt="" class="tarif__referal_pic_img">
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__wrapper">
+                <h2 class="about__title">Что говорят о Robo Traders?</h2>
+                <div class="about__container">
+                    <div class="about__el gradient">
+                        <div class="about__el_review">
+                            <div class="about__el_review_header">
+                                <img src="images/tald.png" alt="" class="about__el_review_header_img">
+                                <p class="about__el_review_header_name">Максим Петров</p>
+                            </div>
+                            <p class="about__el_review_pr">Простая регистрация, понятный интерфейс, удобная управление. Рекомендую Robo Traders, особенно, если нет времени разбираться. Дает хороший профит.</p>
+                        </div>
+                        <div class="about__el_answer">
+                            <div class="about__el_answer_header">
+                                <img src="images/robotLogo.png" alt="" class="about__el_answer_header_img">
+                                <p class="about__el_answer_header_name">Robo Traders</p>
+                            </div>
+                            <p class="about__el_answer_pr">Спасибо, что выбираете Robo Traders!</p>
+                        </div>
+                    </div>
+                    <div class="about__el">
+                        <img src="images/idk.png" alt="" class="about__el_img">
+                        <p class="about__el_pr">Robo Traders умеет зарабатывает на любом рынке. Также большое ...</p>
+                        <div class="about__el_footer">
+                            <img src="images/tald2.png" alt="" class="about__el_footer_img">
+                            <p class="about__el_footer_name">Иван Р.</p>
+                        </div>
+                    </div>
+                    <div class="about__el gradient">
+                        <div class="about__el_wrapper">
+                            <p class="about__el_wrapper_pr">Большой плюс Robo Traders – возможность собрать портфель из спотовых и фьючерсных ...</p>
+                            <div class="about__el_wrapper_footer">
+                                <img src="images/tald3.png" alt="" class="about__el_wrapper_footer_img">
+                                <p class="about__el_wrapper_footer_pr">Евгений Сергеевич</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__el">
+                        <img src="images/idk2.png" alt="" class="about__el_img">
+                        <p class="about__el_pr">Для меня было важно минимальное участие в работе роботов. Не нужно...</p>
+                        <div class="about__el_footer">
+                            <img src="images/tald4.png" alt="" class="about__el_footer_img">
+                            <p class="about__el_footer_name">Борис Анатольевич</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pulse">
+            <div class="pulse__wrapper">
+                <div class="pulse__desc">
+                    <h2 class="pulse__desc_title">Держи руку на пульсе</h2>
+                    <h3 class="pulse__desc_subtitle">ПОСМОТРИ, ЧТО ПИШУТ ПОЛЬЗОВАТЕЛИ ROBO TRADERS В TELEGRAM</h3>
+                    <a href="" class="pulse__desc_link">
+                        <span class="pulse__desc_link_txt">Присоединиться</span>
+                        <img src="images/tgPulse.png" alt="" class="pulse__desc_link_icon">
+                    </a>
+                </div>
+                <div class="pulse__pic">
+                    <img src="images/pulse.png" alt="" class="pulse__pic_img">
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="faq__wrapper">
+                <h2 class="faq__title">Вопросы и ответы</h2>
+                <div class="faq__container">
+                    <div class="faq__el">
+                        <button type="button" class="faq__el_btn" onclick="faq(this)">
+                            <span class="faq__el_btn_txt">Какая минимальная сумма для начала торговли?</span>
+                            <img src="images/plus.png" alt="" class="faq__el_btn_icon active">
+                            <img src="images/minus.png" alt="" class="faq__el_btn_icon">
+                        </button>
+                        <div class="faq__el_content">
+                            <p class="faq__el_pr">Минимальная сумма для начала работы с платформой складывается из стоимости приобретенного пакета (на выбор их три) и из минимально выделенного депозита на вашем биржевом аккаунте роботу для торговли (на одного фьючерсного робота минимум 200 usdt). Для получения наилучших результатов мы рекомендуем депозит в вашем аккаунте на бирже не менее 3000 usdt для диверсификации торговых пар (чем больше тем лучше). Минимальная сумма для копитрейдинга 500 usdt.</p>
+                        </div>
+                    </div>
+                    <div class="faq__el">
+                        <button type="button" class="faq__el_btn" onclick="faq(this)">
+                            <span class="faq__el_btn_txt">От чего зависит мой доход?</span>
+                            <img src="images/plus.png" alt="" class="faq__el_btn_icon active">
+                            <img src="images/minus.png" alt="" class="faq__el_btn_icon">
+                        </button>
+                        <div class="faq__el_content">
+                            <p class="faq__el_pr"></p>
+                        </div>
+                    </div>
+                    <div class="faq__el">
+                        <button type="button" class="faq__el_btn" onclick="faq(this)">
+                            <span class="faq__el_btn_txt">Могу ли я выбрать пары для торговли?</span>
+                            <img src="images/plus.png" alt="" class="faq__el_btn_icon active">
+                            <img src="images/minus.png" alt="" class="faq__el_btn_icon">
+                        </button>
+                        <div class="faq__el_content">
+                            <p class="faq__el_pr"></p>
+                        </div>
+                    </div>
+                    <div class="faq__el">
+                        <button type="button" class="faq__el_btn" onclick="faq(this)">
+                            <span class="faq__el_btn_txt">Какая доходность?</span>
+                            <img src="images/plus.png" alt="" class="faq__el_btn_icon active">
+                            <img src="images/minus.png" alt="" class="faq__el_btn_icon">
+                        </button>
+                        <div class="faq__el_content">
+                            <p class="faq__el_pr"></p>
+                        </div>
+                    </div>
+                    <div class="faq__el">
+                        <button type="button" class="faq__el_btn" onclick="faq(this)">
+                            <span class="faq__el_btn_txt">Где купить криптовалюту в РФ?</span>
+                            <img src="images/plus.png" alt="" class="faq__el_btn_icon active">
+                            <img src="images/minus.png" alt="" class="faq__el_btn_icon">
+                        </button>
+                        <div class="faq__el_content">
+                            <p class="faq__el_pr"></p>
+                        </div>
+                    </div>
+                    <div class="faq__el">
+                        <button type="button" class="faq__el_btn" onclick="faq(this)">
+                            <span class="faq__el_btn_txt">Как я буду получать прибыль?</span>
+                            <img src="images/plus.png" alt="" class="faq__el_btn_icon active">
+                            <img src="images/minus.png" alt="" class="faq__el_btn_icon">
+                        </button>
+                        <div class="faq__el_content">
+                            <p class="faq__el_pr"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discuss">
+            <div class="discuss__wrapper">
+                <div class="discuss__desc">
+                    <h2 class="discuss__desc_title">Бывает так, что нужно обсудить детали</h2>
+                    <h3 class="discuss__desc_subtitle">Служба заботы самой умной системы роботрейдинга ответит на все ваши вопросы</h3>
+                    <a href="" class="discuss__desc_link">
+                        <span class="discuss__desc_link_txt">Связаться</span>
+                        <img src="images/tgPulse.png" alt="" class="discuss__desc_link_icon">
+                    </a>
+                </div>
+                <div class="discuss__pic">
+                    <img src="images/bigRobot.png" alt="" class="discuss__pic_img">
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <a href="" class="footer__logo">
+                    <img src="images/footerLogo.svg" alt="" class="footer__logo_icon">
+                </a>
+                <div class="footer__container">
+                    <ul class="footer__list">
+                        <li class="footer__list_title">Компания</li>
+                        <li><a href="" class="footer__list_link">О Robo Traders</a></li>
+                        <li><a href="" class="footer__list_link">Сотрудничество</a></li>
+                        <li><a href="" class="footer__list_link">Пользовательское соглашение</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list_title">Продукты</li>
+                        <li><a href="" class="footer__list_link">Пакеты услуг</a></li>
+                        <li><a href="" class="footer__list_link">Академия</a></li>
+                        <li><a href="" class="footer__list_link">Демо-версия</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list_title">Инструменты</li>
+                        <li><a href="" class="footer__list_link">Алготрейдинг</a></li>
+                        <li><a href="" class="footer__list_link">Копитрейдинг</a></li>
+                        <li><a href="" class="footer__list_link">Торговый терминал</a></li>
+                    </ul>
+                    <ul class="footer__social">
+                        <li class="footer__social_title">Контакты</li>
+                        <li><a href="" class="footer__social_link">info@robotraders.com</a></li>
+                        <li class="footer__social_links">
+                            <a href="" class="footer__social_links_el">
+                                <img src="images/telegramm.png" alt="" class="footer__social_links_el_icon">
+                            </a>
+                            <a href="" class="footer__social_links_el">
+                                <img src="images/youtube.png" alt="" class="footer__social_links_el_icon">
+                            </a>
+                            <a href="" class="footer__social_links_el">
+                                <img src="images/vk.png" alt="" class="footer__social_links_el_icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__account">
+                        <li class="footer__account_registration">
+                            <button type="button" class="footer__account_registration_btn">Регистрация</button>
+                        </li>
+                        <li class="footer__account_login">
+                            <button type="button" class="footer__account_login_btn">Вход</button>
+                        </li>
+                        <li class="footer__account_lang">
+                            <button type="button" class="footer__account_lang_btn">
+                                <img src="images/flag1.png" alt="" class="footer__account_lang_btn_flag">
+                                <span class="footer__account_lang_btn_txt">RU</span>
+                            </button>
+                            <ul class="footer__account_lang_dropdown">
+                                <li>
+                                    <button type="button" class="footer__account_lang_dropdown_btn">
+                                        <img src="images/flag1.png" alt="" class="footer__account_lang_btn_flag">
+                                        <span class="footer__account_lang_btn_txt">US</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="footer__account_lang_dropdown_btn">
+                                        <img src="images/flag1.png" alt="" class="footer__account_lang_btn_flag">
+                                        <span class="footer__account_lang_btn_txt">AM</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="module" src="js/homepage.js"></script>
+</body>
+</html>
